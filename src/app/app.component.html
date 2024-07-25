@@ -33,7 +33,7 @@
     </div>
   </div>
 </div> -->
-
+<h1>hello</h1>
 <form #studentrecord="ngForm" (ngSubmit)="savetsudent(studentrecord)">
   <input type="text" name="student_name" ngModel placeholder="Enter Student Name" id="">
   <br><br>
@@ -43,7 +43,7 @@
   <br><br>
   <button>Save data</button>
 </form>
-
+<h1>hello world</h1>
 <table border="1" class="table table-bordered table-responsive my-5" *ngIf="!onerecord">
   <thead>
     <tr>
@@ -71,12 +71,12 @@
 <div *ngIf="onerecord">
 
   <form #updaterecord="ngForm" (ngSubmit)="studentupdaterecord(updaterecord)">
-    <input type="hidden" name="id" [ngModel]="onerecord.id" id="">
-    <input type="text" name="student_name" [ngModel]="onerecord.student_name" id="">
+    <input type="hidden" name="id" [ngModel]="onerecord.id" id=""/>
+    <input type="text" name="student_name" [ngModel]="onerecord.student_name" id=""/>
     <br><br>
-    <input type="text" name="student_mobile" [ngModel]="onerecord.student_mobile" id="">
+    <input type="text" name="student_mobile" [ngModel]="onerecord.student_mobile" id=""/>
     <br><br>
-    <input type="text" name="student_email" [ngModel]="onerecord.student_email" id="">
+    <input type="text" name="student_email" [ngModel]="onerecord.student_email" id=""/>
     <br><br>
     <button>Update</button>
   </form>
